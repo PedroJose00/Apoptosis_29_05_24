@@ -2686,7 +2686,7 @@ for dmes in range(1, 2):
 
             #                                                                  xxxxx
             expression_array_dot_tbr[condicion_trabecular] = array_BVTV[condicion_trabecular] * array_derivative_NBMU[condicion_trabecular]
-            fem_function_expression_array_dot_tbr.x[:] = expression_array_dot_tbr
+            fem_function_expression_array_dot_tbr.x.array[:] = expression_array_dot_tbr
             fem_function_expression_array_dot_tbr.x.scatter_forward()
             #expression_array_dot_vr[condicion_cortical] = array_BVTV[condicion_cortical] * array_derivative_NBMU[condicion_cortical] * escalar_tmp_ar1 / escalar_TR
             #fem_function_vr_dot.x.array[:] = expression_array_dot_vr
@@ -4411,7 +4411,7 @@ for dmes in range(1, 2):
 
             #                                                                  xxxxx
             expression_array_dot_tbr[condicion_trabecular] = array_BVTV[condicion_trabecular] * array_derivative_NBMU[condicion_trabecular]
-            fem_function_expression_array_dot_tbr.x[:] = expression_array_dot_tbr
+            fem_function_expression_array_dot_tbr.x.array[:] = expression_array_dot_tbr
             fem_function_expression_array_dot_tbr.x.scatter_forward()
             #expression_array_dot_vr[condicion_cortical] = array_BVTV[condicion_cortical] * array_derivative_NBMU[condicion_cortical] * escalar_tmp_ar1 / escalar_TR
             #fem_function_vr_dot.x.array[:] = expression_array_dot_vr
